@@ -29,7 +29,7 @@ before_install:
       echo "Removing homebrew from Travis CI to avoid conflicts."
       curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall > ~/uninstall_homebrew
       chmod +x ~/uninstall_homebrew
-      ~/uninstall_homebrew -fq
+      ~/uninstall_homebrew -f
       rm ~/uninstall_homebrew
       find /usr/local
 
